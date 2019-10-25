@@ -12,18 +12,14 @@ https://alligator.io/web-components/attributes-properties/
  * Update this interface to reflect the types of the properties
  */
 export interface IComponentProperties {
-  todos: string[];
+  // todos?: any;
 }
 
 /**
  * Update this object with the initial values of the properties
  */
 export const componentProperties: IComponentProperties = {
-  todos: [
-    'Go to src/componentProperties.ts...',
-    'Register properties and attributes...',
-    'Build awesome React Web Component!',
-  ],
+
 };
 
 /**
@@ -31,6 +27,7 @@ export const componentProperties: IComponentProperties = {
  * NB: The type of an attribute must be primitive
  */
 export interface IComponentAttributes {
+  todos: any;
   componentTitle: string;
 }
 
@@ -38,5 +35,6 @@ export interface IComponentAttributes {
  * Update this object with the initial values of the attributes
  */
 export const componentAttributes: IComponentAttributes = {
+  todos: '',
   componentTitle: 'My Component',
 };
